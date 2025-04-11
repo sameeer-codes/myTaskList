@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        MyTaskList
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>MyTaskList</h1>
+
+    <form id="taskListForm">
+        <input type="text" required id="addTaskInput">
+        <button type="submit" id="addTaskBtn">Add Task</button>
+    </form>
+
+    <div class="taskscontainer">
+        <!-- <div class="tasksFilter">
+            <ul>
+                <li>Completed</li>
+                <li>All</li>
+                <li>Incomplete</li>
+            </ul>
+        </div> -->
+
+        <div class="tasksListContainer">
+            <ul class="tasksList" id="tasksList">
+                <li>
+                    <span class="taskContent">This is a New Task</span>
+                    <span class="taskMethods">
+                        <input type="checkbox" id="completedCheckBox" class="completedCheckBox">
+                        <button class="editTaskbtn" id="editTaskbtn">
+                            <i class="ri-edit-box-line"></i>
+                        </button>
+                        <button class="deleteTaskbtn" id="deleteTaskbtn">
+                            <i class="ri-close-circle-line"></i>
+                        </button>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
