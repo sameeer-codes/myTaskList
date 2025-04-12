@@ -10,18 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>MyTaskList</h1>
+    <div class="flex flex-col gap-20 w-100 align-center">
 
-    <form id="taskListForm">
-        <input type="text" required id="addTaskInput">
-        <button type="submit" id="addTaskBtn">Add Task</button>
-    </form>
+        <h1>MyTaskList</h1>
 
-    <div class="taskscontainer">
-        <!-- <div class="tasksFilter">
+        <form id="taskListForm" class="w-100 flex align-center gap-10 p-10">
+            <input type="text" required id="addTaskInput">
+            <button type="submit" id="addTaskBtn">Add Task</button>
+        </form>
+
+        <div class="taskscontainer flex flex-col w-100 p-10">
+            <!-- <div class="tasksFilter">
             <ul>
                 <li>Completed</li>
                 <li>All</li>
@@ -29,11 +32,10 @@
             </ul>
         </div> -->
 
-        <div class="tasksListContainer">
-            <ul class="tasksList" id="tasksList">
+            <ul class="tasksList gap-10 flex flex-col w-100 hide-scrollbar" id="tasksList">
                 <li>
-                    <span class="taskContent">This is a New Task</span>
-                    <span class="taskMethods">
+                    <p class="taskContent">This is a New Task</p>
+                    <div class="taskMethods">
                         <input type="checkbox" id="completedCheckBox" class="completedCheckBox">
                         <button class="editTaskbtn" id="editTaskbtn">
                             <i class="ri-edit-box-line"></i>
@@ -41,7 +43,7 @@
                         <button class="deleteTaskbtn" id="deleteTaskbtn">
                             <i class="ri-close-circle-line"></i>
                         </button>
-                    </span>
+                    </div>
                 </li>
             </ul>
         </div>

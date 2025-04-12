@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 30px 0px;
+    max-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.hide-scrollbar {
+    overflow: auto;
+    /* or 'scroll' if you want scrollbar always enabled */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+body>div {
+    max-width: 650px;
+    gap: 20px;
+}
+
+body>div>h1 {
+    font-size: 3.4rem;
+}
+
+
+body>div>form {
+    justify-content: space-between;
+}
+
+body>div>form input,
+body>div>form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+body>div>form input {
+    width: 80%;
+}
+
+body>div>form button {
+    cursor: pointer;
+}
+
+.taskscontainer .tasksList {
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.taskscontainer .tasksList li {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    justify-content: space-between;
+}
+
+.taskscontainer .tasksList li .taskMethods {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.taskscontainer .tasksList li .taskMethods input {
+    height: 30px;
+    width: 20px;
+}
+
+.taskscontainer .tasksList li .taskMethods button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+}
+
+.taskscontainer .tasksList li .taskMethods button i {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body>div>h1 {
+        font-size: 2rem;
+    }
+
+    body>div>form {
+        flex-wrap: wrap;
+    }
+
+    body>div>form input,
+    body>div>form button {
+        width: 100%;
+    }
+}
